@@ -91,6 +91,25 @@ number2=10
 console.log (number1/number2)
 
 
+//looping injavascript//
+const friendsname= ['saad','osama','sami','kashif','zayad']
+
+for (let i = 2; i <= friendsname.length; i++) {
+    console.log (friendsname[i])
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
