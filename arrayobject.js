@@ -48,10 +48,10 @@ var employsdetails = [
     }
 ]
 
-//for employ details
-// for (var i=0 ; i<= employsdetails.length ; i++) {
-    // console.log (employsdetails[i])
-// }
+//for employ details//
+for (var i=0 ; i<= employsdetails.length ; i++) {
+    console.log (employsdetails[i])
+}
  
 //for employ status
 // for (var i=0 ; i<= employsdetails.length ; i++ ) { if (employsdetails[i].is_enroll < 1) {
@@ -60,29 +60,25 @@ var employsdetails = [
      
 // }
 
-//for employ max salary
-// for (var i=0 ; i<= employsdetails.length ; i++ ) { 
-    // if (employsdetails[i])
-    //  {
-    // console.log (Math.max(employsdetails[i].salary_cook));
+//for employs name 
+for (var a=0 ; a<=employsdetails.length ; a++) {
+    console.log (employsdetails[a].name)
+} 
+
+
+// // for each example 
+// var uniquedep= [];
+
+// employsdetails.forEach (function (value,) {
+//     var isnotunique = uniquedep.includes(value.department);
+
+//     if (!isnotunique) {
+//         uniquedep.push (value.department);
+//     }
 // }
-// }
+// )
 
-
-
-
-var uniquedep= [];
-
-employsdetails.forEach (function (value,) {
-    var isnotunique = uniquedep.includes(value.department);
-
-    if (!isnotunique) {
-        uniquedep.push (value.department);
-    }
-}
-)
-
-//  console.log (uniquedep);
+// //  console.log (uniquedep);
 
 
  

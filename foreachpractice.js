@@ -56,15 +56,20 @@ var employsdetails = [
 var totalexpenses= []
 var totlsalary= []
 var totldept= []
+var sum = {
+    hr: 0,
+    cooking: 0,
+    tech:0
+};
 
-
-employsdetails.forEach (function companyexpenses(value,) {
+employsdetails.forEach(function companyexpenses(value) {
+    console.log({totldept, value})
     if (!totldept.includes(value.department)) {
         totldept.push(value.department);
-        totlsalary.push(value.salary);
-        totalexpenses[value.department] = value.salary
-     }
+    }
+    // totlsalary.push(value.salary);
+    sum[value.department]  += value.salary
 })
 
-console.log (totalexpenses)
+console.log(sum)
 

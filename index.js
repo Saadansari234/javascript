@@ -125,9 +125,59 @@ while (b<=10) {
 var c=1
 
 do {
-  console.log('hello world');
+//   console.log('hello world');
   c++
 } while (c <= 10)
+
+//template literals
+
+const name= "saad"
+const session= "reactjs"
+const text= `hello ${name}, welcome to ${session}`;
+
+// console.log (text)
+
+
+//single line es6 upgraded arrow function 
+const squareofnumber = number=> number * number
+//  console.log (squareofnumber (10))
+
+
+//multiple line es6 upgraded arrow function
+const iseven = (number) => {
+if (number % 2 === 0) {
+    return true;
+}
+return false;
+}
+
+// console.log (iseven (15))
+
+//spread operator
+const detais= {
+    skills:"reactjs",
+    location:"vikhroli",
+}
+
+const newdetails = { 
+    name:"saad",
+    ...detais
+};
+
+// console.log (newdetails)
+
+//rest parrametere
+
+function values (a, b, ...c){
+    console.log (a,b,c)
+}
+
+values (1,2,3,4,5,6)
+
+
+
+
+
 
 
 

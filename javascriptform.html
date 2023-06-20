@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- first we will make a survey by html forms -->
+    <h1>this is a survey for student</h1>
+
+    <label for="fname">first name:</label><input placeholder="first name" id="fname" /><br />
+    <p id="fnameerror" style="display: none;"></p>
+    <label for="lname">last name:</label><input placeholder="last name" id="lname" /><br />
+    <p id="lnameerror" style="display: none;"></p>
+    <label for="mobile no.">phone no.</label><input type="number" id="numberInput" /><br />
+    <p id="numbererror" style="display: none;"></p>
+    
+    <button id="submit-btn" onclick="handlebtn()">submit</button>
+
+
+
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        //    var form= document.getElementById("form")
+
+
+
+        //    form.addEventListener( "submit", function (value) {
+
+        //        var fname= document.getElementById("fname").value
+        //        console.log (form)
+
+        //       var lname = document.getElementById("lname").value
+        //       console.log (lname)
+        //  })
+
+        function handlebtn() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+
+            // var list = document.getElementById("list")
+
+            // list.appendChild(fname)
+            //  const node = document.createElement("li");                      
+
+            //  const textnode = document.createTextNode(fname + " " + lname);
+
+            //  node.appendChild(textnode);
+
+            //  document.getElementById("list").appendChild(node);
+
+            var typeerror1 = document.getElementById("fnameerror")
+
+
+            if (fname.trim() === "") {
+                console.log("enter your first name")
+
+                typeerror1.innerHTML = "enter your first name";
+                typeerror1.style.display = "block";
+                typeerror1.style.color = "red";
+
+            } else {
+                console.log (fname)
+                typeerror1.style.display="none"
+            }
+
+            var typeerror2 = document.getElementById("lnameerror")
+
+            if (lname.trim() === "") {
+                console.log("enter your last name")
+
+                typeerror2.innerHTML = "enter your last name";
+                typeerror2.style.display = "block";
+                typeerror2.style.color = "red";
+
+            }else {
+                console.log (lname)
+                typeerror2.style.display="none"
+            }
+
+            //now we will apply condition to our number input that if our number is more than and less tham 10 it will show "please endter 10 number"
+
+            var numberInput = document.getElementById("numberInput").value;
+            var typeerror3 = document.getElementById("numbererror")
+
+            var isValid = numberInput.length === 10;
+
+            if (!isValid) {
+               
+                typeerror3.innerHTML = 'enter a valid 10 digit number';
+                typeerror3.style.display="block";
+                typeerror3.style.color = "red";
+
+            } else {
+                console.log(numberInput)
+                typeerror3.style.display="none";
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+
+</html>
