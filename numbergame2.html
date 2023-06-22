@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number game javascript</title>
+    <link rel="stylesheet" href="numbergame2.css">
+    <script src="numbergame2.js"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <h1>Guess The Number</h1>
+        <p id="output">
+            We have selected a random number
+            between 1 - 100. See if you can
+            guess it.
+        </p>
+
+
+        <label for="guessField" class="label">
+            Enter a guess:
+        </label>
+
+        <input type="text" id="input" class="guessField">
+         <button id="btn" onclick="handlebtn()" class="button">enter</button>
+         <button onclick="reset()">reset</button>
+
+
+         <h3 class="attemts">Attempts: <span id="attemtscounter" class="span">5</span></h3>
+         <h2 id="resultmessage" class="message"></h2>
+
+       
+
+    </div>
+
+
+</body>
+
+</html>

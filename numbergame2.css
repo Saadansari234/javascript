@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    background-color: #C4D7B2;
+}
+
+.screen {
+    background-color: #A0C49D ;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 10rem;
+}
+
+
+.span {
+    color: red;
+}
