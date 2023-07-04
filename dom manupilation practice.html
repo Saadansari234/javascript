@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manupilation practice </title>
+</head>
+<body>
+<p style="display: none;" id="para">this is the result when you click </p>
+<button id="click">submit</button>
+
+<label for="enter">enter something:</label>
+<input type="text" value="enter" name="txt" onchange="changetext(this.value)">
+
+<script>
+ const onclickfunction = () =>{
+
+ document.addEventListener('click', ()=>{
+document.getElementById("para").style.display= "block";
+document.getElementById("para").style.color= "red";
+
+ }) 
+
+  }
+  onclickfunction();
+
+const changetext=(value)=>{
+    alert("The input value has changed. The new value is: " + value);
+}
+
+
+
+
+
+
+  
+</script>
+
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>

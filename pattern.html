@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript pattern</title>
+</head>
+<body>
+    
+<script>
+
+   const pattern1 = () =>{
+    let numberofrows= 5;
+    let numberofcolumn= 10;
+    debugger;
+   
+    for (i=1 ; i<=numberofrows ; i++){
+        for (j=1 ; j<=numberofcolumn; j++){
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+    
+   }
+
+pattern1()
+
+
+
+const pattern2 = () =>{
+// task:
+//12345
+//1234
+//123
+//12
+//1
+
+for (a=5 ; a>=1 ; a--){
+    for (b=1 ; b<=a; b++){
+        document.write (b, " ")
+    }
+    document.write("<br>")
+}
+
+}
+pattern2()
+
+
+const pattern3 = () =>{
+//task
+//54321
+//5432
+//543
+//54
+//5
+for (a=5 ; a>=1; a--){
+    for (b=1 ; b<=a ; b++){
+        document.write(a)
+    }
+    document.write("<br>")
+}
+
+}
+pattern3()
+
+//task
+//1         
+//22
+//333
+//22
+//1
+
+const pattern4 = () =>{
+  for (a= 1 ; a<=5 ; a++){
+    for (b=1 ; b<=a ; b++){
+        document.write("*", " ")
+    }
+    document.write("<br>")
+  }
+
+for (c=4 ; c>=1 ; c--){
+    for (d=1 ; d<=c ; d++){
+        document.write("*" , " ")
+    }
+    document.write("<br>")
+}
+
+
+}
+//pattern4()
+
+</script>
+
+
+</body>
+</html>

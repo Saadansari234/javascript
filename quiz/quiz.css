@@ -1,0 +1,97 @@
+/* body{
+
+background-color: whitesmoke;
+}
+
+.input{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 30rem;
+}
+
+.right {
+    display: inline;
+    margin-left: 24rem;
+    background-color: aqua;
+} */
+body {
+    background-color: #00cec9;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    font-family: "josefin sans";
+    color: rgba(0, 0, 0, 0.797);
+}
+
+.quiz {
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+    margin-top: 5rem;
+    width: 60rem;
+    padding-bottom: 3rem;
+}
+
+
+#head {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-top: 2rem ;
+    padding-left: 2rem;
+
+}
+
+.inputs {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+#submit {
+    width: 6rem;
+    height: 2rem;
+    margin: 0rem 0rem 2rem 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    border: 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+}
+
+.scorearea{
+    display: none;
+}
+
+#score{
+    margin: 0rem 13rem;
+    padding: 1.5rem;
+    border: 0px solid black;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+    background-color: #fdcb6e;
+    text-align: center;
+}
+
+.btn {
+    width: 6rem;
+    height: 2rem;
+    background-color: pink;
+    color: rgba(0, 0, 0, 0.797);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+
+
+
+
+

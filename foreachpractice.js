@@ -1,6 +1,6 @@
 // array object for company employes 
 
-var employsdetails = [
+const employsdetails = [
     {
         name: 'saad',
         email: "saadansari@gmail.com",
@@ -50,26 +50,143 @@ var employsdetails = [
 
 
 
+//list all curent available eployees
+//list all unique department
+//expenses of all departments
+//get employment details by their id (use function)
 
-//now we will see what is the addition of all slarys and it will showw as copanies axpenses 
 
-var totalexpenses= []
-var totlsalary= []
-var totldept= []
-var sum = {
-    hr: 0,
-    cooking: 0,
-    tech:0
-};
+//list all current available
 
-employsdetails.forEach(function companyexpenses(value) {
-    console.log({totldept, value})
-    if (!totldept.includes(value.department)) {
-        totldept.push(value.department);
+function enroled() {
+    let enroledemp= [];
+    employsdetails.forEach((value)=>{
+        if (value.is_enroll==="1") {
+            enroledemp.push(value.name);
+        }
+    })
+
+    return enroledemp;
+}
+console.log(enroled())
+
+
+//list all unique department
+
+
+function alldepartments() {
+   let uniquedep = [];
+   employsdetails.forEach((value)=>{
+    if (!uniquedep.includes(value.department)){
+// uniquedep.push(value.department);
+// uniquedep.push(value.salary);
+  uniquedep[value.department]=value.salary;
     }
-    // totlsalary.push(value.salary);
-    sum[value.department]  += value.salary
+   })
+   return uniquedep;
+}
+
+// console.log (alldepartments())
+
+
+//expenses of all departments
+
+const foreachproperties= () =>{
+let arr= [200, 300, 400, 500, 600,]
+
+arr.forEach((curntvalue, index , arr)=>{
+    console.log(index + " " +curntvalue, arr[index]+100)
 })
 
-console.log(sum)
+}
+
+foreachproperties()
+
+
+
+
+
+
+// var currentemploys = []
+
+// employsdetails.forEach( function currentemploys(value,) {
+//     if (is_enroll==1) {
+//         currentemploys.push(value.name)
+//     }
+// // console.log(currentemploys)
+// }
+ 
+// )
+// console.log(currentemploys)
+
+
+
+// const arr = [{a: 1}, {a: 2}]        
+// const values = [1,2];
+
+// arr.forEach((v) => {
+//     // {a:1}
+//     if (v.a === 1) {
+
+//     }
+// })
+
+
+// const students = [
+//     { name: 'John', grade: 80 },
+//     { name: 'Jane', grade: 90 },
+//     { name: 'Adam', grade: 75 },
+//     { name: 'Emily', grade: 95 }
+//   ];
+  
+//   function getHighGrades() {
+//     const highGrades = [];
+  
+//     students.forEach((student) =>{
+//       if (student.grade >= 90) {
+//         highGrades.push(student.name);
+//       }
+//     });
+  
+//     return highGrades;
+//   }
+  
+//   const highGradeStudents = getHighGrades();
+//   console.log(highGradeStudents); // Output: ['Jane', 'Emily']
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

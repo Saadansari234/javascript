@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user calculator</title>
+    <link rel="stylesheet" href="assesment.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <label for="n1">number1</label><br>
+        <input type="text" id="num1"><br><br>
+
+        <select id="options">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select><br><br>
+
+
+        <label for="n2">number2</label><br>
+        <input type="text" id="num2"><br><br>
+
+
+        <button onclick="submit()">submit</button>
+        <button onclick="reset()">reset</button><br><br>
+
+        <label for="res">result</label><br>
+        <input type="text" id="result" disabled><br><br>
+
+
+    </div>
+
+
+
+    <script>
+
+        function submit() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var result = document.getElementById("result");
+
+
+            var options = document.getElementById("options").value;
+
+            if (options === '+') {
+                result.value = num1 + num2;
+                result.style.color="green";
+            }
+            else if (options === "-") {
+                result.value = num1 - num2;
+                result.style.color="green";
+            }
+            else if (options === "x") {
+                result.value = num1 * num2;
+                result.style.color="green";
+            }
+            else if (options === "/") {
+                result.value = num1 / num2;
+                result.style.color="green";
+            }
+
+        }
+
+
+        function reset() {
+            result = document.getElementById("result").value = "";
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+        }
+    </script>
+</body>
+
+</html>

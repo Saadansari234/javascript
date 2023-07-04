@@ -174,7 +174,12 @@ function values (a, b, ...c){
 
 values (1,2,3,4,5,6)
 
+//for of loop
+const fruits = ["Banana", "Apple", "Watermelon"];
 
+for (let value of fruits) {
+    console.log(value);
+}
 
 
 

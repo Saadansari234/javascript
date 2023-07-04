@@ -7,7 +7,7 @@ body {
     background-color: #C4D7B2;
 }
 
-.screen {
+.form {
     background-color: #A0C49D ;
     text-align: center;
     border: 5px solid black;
@@ -16,6 +16,3 @@ body {
 }
 
 
-.span {
-    color: red;
-}

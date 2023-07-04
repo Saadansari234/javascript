@@ -17,55 +17,79 @@
 // }
 
 
-let number = [Math.floor(Math.random() * 100) + 1]
+let number = [Math.floor(Math.random() * 10) + 1]
 let attempt = 5 ;
 
 
+/*hh
+hh*/
+
+
+  
 function handlebtn() {
-  let btn= document.getElementById("btn")
+ var submitbutton= document.getElementById("submitbtn");
   let input = document.getElementById("input").value;
   let output = document.getElementById("output");
   let resultmessage = document.getElementById("resultmessage");
-  let attemtscounter= document.getElementById("attemtscounter")
+  let attemtscounter= document.getElementById("attemtscounter");
+
+
+  
 
   //let give condition to the input
 
   if (input == number) {
-    output.innerHTML = `you guess right , your answer was ${number}`
+    output.innerHTML = `you guess right , your answer was ${number}`;
+    submitbutton.disabled= true;
+    resultmessage.innerHTML = `<h1>🌹</h1>`;
+    return;
   } else if (input < number) {
     attempt--;
     if (attempt === 0 ) {
       resultmessage.innerHTML = `better luck next time. the right number was ${number}`;
-      attemtscounter.innerHTML = `${attempt}`;
+      attemtscounter.innerHTML = attempt;
+      submitbutton.disabled= true;
+      return;
       
     } else {
       output.innerHTML = 'your number is too low!';
-      attemtscounter.innerHTML = `${attempt}`;
+      attemtscounter.innerHTML = attempt;
     }
     console.log("attempt");
    
-  }
-
-  if (input > number) {
+  } else if(input > number) {
     attempt--;
     if (attempt === 0 ) {
       resultmessage.innerHTML = `better luck next time. the right number was ${number}`;
-      attemtscounter.innerHTML = `${attempt}`;
+      attemtscounter.innerHTML = attempt;
+      submitbutton.disabled= true;
+      return;
 
     } else {
       output.innerHTML = 'your number is too high!';
-      attemtscounter.innerHTML = `${attempt}`
+      attemtscounter.innerHTML = attempt;
     }
     console.log("attempt");
+
+
+    
+
   }
 
+  
+    // Here you can perform any additional tasks when the loop stops
+    // For example, disable the input field or hide the submit button
+   
+
+
+//  if (input > number) {
+  //}
+
 }
 
-function reset() {
-  document.getElementById("input").value = "";
-  output.innerHTML = "We have selected a random number between 1 - 100. See if you can guess it."
-  attempt = 5 ;
-}
+
+
+
 
 
 
