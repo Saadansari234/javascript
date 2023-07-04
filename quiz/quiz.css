@@ -1,21 +1,6 @@
-/* body{
 
-background-color: whitesmoke;
-}
-
-.input{
-    border: 1px solid black;
-    border-radius: 4px;
-    width: 30rem;
-}
-
-.right {
-    display: inline;
-    margin-left: 24rem;
-    background-color: aqua;
-} */
 body {
-    background-color: #00cec9;
+    background-color: #c7ecee;
     width: 50%;
     max-width: 800px;
     min-width: 480px;
@@ -24,7 +9,106 @@ body {
     color: rgba(0, 0, 0, 0.797);
 }
 
-.quiz {
+#selector{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.choozequiz{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 1.5rem;
+}
+
+.quizlist{
+    display: flex;
+    justify-content: space-between;
+}
+.div1 {
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.div2{
+display: flex;
+flex-wrap: wrap;
+}
+
+#git{
+    margin-top: 4rem;
+    width: 15rem;
+    height: 15rem;
+    border: 0px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+
+}
+#git img{
+    width: 12.5rem;
+    height: 12.5rem;
+    
+}
+
+#html{
+    margin-top: 4rem;
+    width: 15rem;
+    height: 15rem;
+    border: 0px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+
+    
+}
+#html img{
+    width: 13rem;
+    height: 13rem;
+    
+}
+#css{
+    margin-top: 4rem;
+    width: 15rem;
+    height: 15rem;
+    border: 0px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+
+}
+#css img{
+    width: 10rem;
+    height: 13rem;
+    
+}
+
+#javascript{
+    margin-top: 4rem;
+    width: 15rem;
+    height: 15rem;
+    border: 0px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+
+}
+#javascript img{
+    width: 13rem;
+    height: 13rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#quiz {
     background-color: white;
     border: 0px solid black;
     border-radius: 1rem;
